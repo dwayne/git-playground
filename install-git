@@ -1,0 +1,28 @@
+#!/bin/bash -e
+
+if [ -x /usr/bin/git ]; then
+  echo 'Skipping Git installation since it is already installed.'
+else
+  echo 'Installing Git...'
+  sudo add-apt-repository ppa:git-core/ppa
+  sudo apt-get update -yq
+  sudo apt-get install -yq git
+
+  echo 'Configuring Git...'
+
+  git config --global user.name "Dwayne R. Crooks"
+  git config --global user.email "me@dwaynecrooks.com"
+
+  git config --global core.editor "nano -iT 2"
+
+  git config --global alias.br branch
+  git config --global alias.ci commit
+  git config --global alias.co checkout
+  git config --global alias.st status
+  git config --global alias.hist "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+
+  echo '*~' > ~/.gitignore_global
+  git config --global core.excludesFile "$HOME/.gitignore_global"
+
+  echo 'Done!'
+fi
