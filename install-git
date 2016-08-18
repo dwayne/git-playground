@@ -10,7 +10,7 @@ else
 
   echo 'Configuring Git...'
 
-  git config --global user.name "Dwayne R. Crooks"
+  git config --global user.name "Dwayne Crooks"
   git config --global user.email "me@dwaynecrooks.com"
 
   git config --global core.editor "nano -iT 2"

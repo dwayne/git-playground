@@ -1,6 +1,6 @@
 # Git Playground
 
-Play with the latest Git in a virtual machine.
+Play with the latest [Git][git] in a [virtual machine](https://www.virtualbox.org/).
 
 # Usage
 
@@ -13,7 +13,7 @@ $ mkdir git-playground && curl -L https://github.com/dwayne/playwhe/tarball/mast
 $ cd git-playground
 
 # Configure the Git user's name and email
-$ sed -i "s/Dwayne R\. Crooks/John Doe/" install-git
+$ sed -i "s/Dwayne Crooks/John Doe/" install-git
 $ sed -i "s/me@dwaynecrooks\.com/john\.doe@example\.com/" install-git
 
 # Bring up the VM and log in
@@ -22,9 +22,9 @@ $ vagrant ssh
 
 # Now you're in you can play around with Git
 $ mkdir example && cd example
-$ echo 'Hello, world!' > hello
+$ echo 'Hello, world!' > hello.txt
 $ git init
-$ git add .
+$ git add hello.txt
 $ git ci -m "Initial commit"
 $ git hist
 ```
@@ -33,12 +33,14 @@ $ git hist
 
 **Free**
 
-- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/)
 - [Pro Git](http://git-scm.com/book)
+- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/)
 - [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 
 **Paid**
 
-- [Goal-Oriented Git](https://gumroad.com/l/goal-oriented-git)
+- [Git on Code School](https://www.codeschool.com/learn/git)
 - [Mastering Git](https://upcase.com/mastering-git)
-- [Git on Code School](https://www.codeschool.com/paths/git)
+- [Goal-Oriented Git](https://gumroad.com/l/goal-oriented-git)
+
+[git]: https://git-scm.com/
