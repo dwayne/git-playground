@@ -6,9 +6,9 @@ Play with the latest [Git][git] in a [virtual machine](https://www.virtualbox.or
 
 ```sh
 # If you have Git installed then
-$ git clone
+$ git clone git@github.com:dwayne/git-playground.git
 # Otherwise
-$ mkdir git-playground && curl -L https://github.com/dwayne/playwhe/tarball/master | tar -xz --directory=git-playground --strip-components=1
+$ mkdir git-playground && curl -L https://github.com/dwayne/git-playground/tarball/master | tar -xz --directory=git-playground --strip-components=1
 
 $ cd git-playground
 
